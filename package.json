@@ -1,0 +1,44 @@
+{
+  "name": "chat-backend-final",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "start-websocket": "node websocketServer.js"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.4.1",
+    "@strapi/plugin-users-permissions": "5.4.1",
+    "@strapi/strapi": "5.4.1",
+    "axios": "^1.7.8",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "11.3.0",
+    "mysql2": "^3.11.4",
+    "pg": "^8.13.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "socket.io": "^4.8.1",
+    "styled-components": "^6.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "a45c7c19-8e21-499f-a98d-a20737f7b9df"
+  }
+}
