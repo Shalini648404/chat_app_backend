@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
-  "scripts": {
+   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
-    "start-websocket": "node websocketServer.js"
+    "start-websocket": "node websocketServer.js",
+    "dev": "concurrently \"npm run develop\" \"npm run start-websocket\""
   },
+  
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.1",
     "@strapi/plugin-users-permissions": "5.4.1",
@@ -32,6 +34,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "concurrently": "^9.1.0",
     "typescript": "^5"
   },
   "engines": {
