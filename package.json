@@ -10,8 +10,9 @@
     "strapi": "strapi",
     "start-websocket": "node websocketServer.js",
     "dev": "concurrently \"npm run develop\" \"npm run start-websocket\"",
-    "start": "concurrently \"strapi start\" \"node websocketServer.js\""
+    "start": "strapi start"
   },
+
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.1",
     "@strapi/plugin-users-permissions": "5.4.1",
