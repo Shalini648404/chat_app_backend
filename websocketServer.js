@@ -33,8 +33,8 @@ wss.on('connection', (ws) => {
 
 console.log('WebSocket server is running on ws://localhost:4000');
 */
-//const WebSocket = require('ws');
-import WebSocket from 'ws';
+const WebSocket = require('ws');
+//import WebSocket from 'ws';
 const axios = require('axios'); // For making HTTP requests to Strapi API
 
 // Create WebSocket server
