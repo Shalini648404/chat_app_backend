@@ -34,6 +34,7 @@ wss.on('connection', (ws) => {
 console.log('WebSocket server is running on ws://localhost:4000');
 */
 const WebSocket = require('ws');
+//import WebSocket from 'ws';
 const axios = require('axios'); // For making HTTP requests to Strapi API
 
 // Create WebSocket server
@@ -51,7 +52,7 @@ wss.on('connection', (ws) => {
 
     // Optionally, save the message to Strapi via an API call
     try {
-      const response = await axios.post('http://localhost:1337/api/messages', {
+      const response = await axios.post('https://chat-app-backend-n87k.onrender.com/api/messages', {
         data: { context: message },  // Adjusting the payload structure
       });
       console.log('Message saved in Strapi:', response.data);
